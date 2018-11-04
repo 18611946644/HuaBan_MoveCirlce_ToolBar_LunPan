@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ffff" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/linearLayout"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/iv"
+        >
+
+        <Button
+            android:id="@+id/btn_movecircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="save"
+            android:text="移动的圆" />
+
+        <Button
+            android:id="@+id/btn_move_ren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="save"
+            android:text="移动的人儿" />
+
+        <Button
+            android:id="@+id/btn_dzhuanpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="疯狂大转盘"
+            />
+
+        <Button
+            android:id="@+id/btn_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简单ToolBar"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+        <Button
+            android:id="@+id/btn_colorr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红色"
+            android:onClick="red"
+            />
+        <Button
+            android:id="@+id/btn_colorg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绿色"
+            android:onClick="green"
+            />
+
+        <Button
+            android:id="@+id/btn_shuazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="brush"
+            android:text="刷子" />
+        <Button
+            android:id="@+id/btn_baocun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:onClick="save"
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>
